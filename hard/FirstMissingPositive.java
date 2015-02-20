@@ -1,5 +1,6 @@
 // First Missing Positive 
 // https://oj.leetcode.com/problems/first-missing-positive/
+
 public class Solution {
     public int firstMissingPositive(int[] A) {
         for(int i = 0; i < A.length; i++){
@@ -11,7 +12,7 @@ public class Solution {
                 } else break;
             }
         }
-
+        
         for(int i = 0; i < A.length; i++){
             if (A[i] != i+1){
                 return i + 1;
